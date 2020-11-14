@@ -1,12 +1,19 @@
 import React from 'react';
+
+import 'materialize-css/dist/css/materialize.min.css'
 import './App.css';
+
+import {Carousel} from './components/Carousel'
 
 function App() {
   return (
     <div>
-      <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">DARTCA</span>
+       <nav>
+        <div className="nav-wrapper deep-purple darken-3">
+          <a href="/" className="brand-logo">DARTCA</a>
+        </div>
       </nav>
+      <Carousel></Carousel>
     </div>
   );
 }
