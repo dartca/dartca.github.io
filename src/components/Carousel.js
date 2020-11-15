@@ -1,11 +1,11 @@
-import React, {useEffect} from 'react';
+import React, {useEffect,useState} from 'react';
 import M from 'materialize-css'
 import '../styles.css';
-// import {Item} from './Item';
+import {CarouselArq} from './CarouselArq'
+import {CarouselArt} from './CarouselArt'
 
 export const Carousel = () => {
-    const num = 4;
-    // const [lista,setLista] = useState([]);
+    const [titulo,setTitulo] = useState('Arquitectura y Diseño')
 
     useEffect(() => {
         const elems00 = document.querySelectorAll('.carousel');
@@ -14,18 +14,13 @@ export const Carousel = () => {
             dist: -90,
             shift: 20,
             padding: 5,
-            numVisible: 5,
+            numVisible: 3,
             indicators: true
         });
 
         var elems01 = document.querySelectorAll('.materialboxed');
         const indic01 = M.Materialbox.init(elems01, {});
 
-        let aux = [];
-        for(let i=1; i<=num; i++){
-            aux.push(i)
-        }
-        // setLista(aux);
         console.log(indic00);
         console.log(indic01);
     },[]);
@@ -33,28 +28,32 @@ export const Carousel = () => {
     return (
         <div className="container">
             <div className="row">
+                <br/><br/>
+                <div className="col s6 center">
+                    <button className="waves-effect waves-light btn-small"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        setTitulo("Arquitectura y Diseño");
+                    }}>
+                        Arquitectura
+                    </button>
+                </div>
+                <div className="col s6 center">
+                    <button className="waves-effect waves-light btn-small"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        setTitulo("Arte");
+                    }}>
+                        Arte
+                    </button>
+                </div>
                 <div className="col s12">
-                    <h1 className="center-align">Imagenes</h1>
-                    <div className="carousel center-align">
-                        <a className="carousel-item" href="#1">
-                            <img className="materialboxed" src="https://lorempixel.com/250/250/nature/1" alt="/"/>
-                        </a>
-                        <a className="carousel-item" href="#2">
-                            <img className="materialboxed" src="https://lorempixel.com/250/250/nature/2" alt="/"/>
-                        </a>
-                        <a className="carousel-item" href="#3">
-                            <img className="materialboxed" src="https://lorempixel.com/250/250/nature/3" alt="/"/>
-                        </a>
-                        <a className="carousel-item" href="#4">
-                            <img className="materialboxed" src="https://lorempixel.com/250/250/nature/4" alt="/"/>
-                        </a>
-                        <a className="carousel-item" href="#5">
-                            <img className="materialboxed" src="https://lorempixel.com/250/250/nature/5" alt="/"/>
-                        </a>
-                    </div>
+                    <h3 className="center-align">{titulo}</h3><br/>
+                    <CarouselArq/>
+                    <br/><br/>
+                    <CarouselArt/>
                 </div>
             </div>
-            {/* <Item num={20}></Item> */}
         </div>
     );
 }
