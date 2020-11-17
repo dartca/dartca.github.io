@@ -4,17 +4,14 @@ import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize';
 import './styles.css';
 
-import {Carousel} from './components/Carousel'
+import {Navbar} from './components/Navbar'
+import {Home} from './components/Home'
 
 function App() {
   return (
     <div>
-       <nav>
-        <div className="nav-wrapper">
-          <a href="/" className="brand-logo">DARTCA</a>
-        </div>
-      </nav>
-      <Carousel></Carousel>
+      <Navbar/>
+      <Home/>
     </div>
   );
 }
