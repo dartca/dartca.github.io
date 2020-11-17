@@ -44,8 +44,14 @@ button{
     overflow:hidden;
   }
 
+img.hover-zoom{
+    width: 400px;
+    height: 400px;
+}
+
 img.hover-zoom:hover {
     transform: scale(0.90);
+    transition-duration: 1s;
 }
 
 .card-title{

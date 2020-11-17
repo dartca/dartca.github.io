@@ -2,21 +2,18 @@ import React from 'react';
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize';
 import '../styles.css';
-import dart from '../img/dartca.png';
 
-export const Card = () => {
+
+export const Card = (props) => {
 
     return(
-        <div className="card">
+        <div className="card black white-text">
             <div className="card-image">
-                <img src={dart} alt="/" className="hover-zoom"/>
-                <span className="card-title">Arquitectura y Diseño</span>
-                <a className="btn-floating halfway-fab waves-effect waves-light red" href="/">
-                    <i className="material-icons">add</i>
-                </a>
+                <img src={props.img} alt="/" className="hover-zoom" onClick={()=>{}}/>
+                <span className="card-title">{props.title}</span>
             </div>
             <div className="card-content">
-                <p>Aquí puedes ver lo que tenga que ser</p>
+                <p>{props.content}</p>
             </div>
         </div>
     )
