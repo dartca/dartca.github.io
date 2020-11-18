@@ -9,11 +9,10 @@ export const Card = (props) => {
     return(
         <div className="card black white-text">
             <div className="card-image">
-                <img src={props.img} alt="/" className="hover-zoom" onClick={()=>{}}/>
+                <a href="/">
+                    <img src={props.img} alt="/" className="hover-zoom"/>
+                </a>
                 <span className="card-title">{props.title}</span>
-            </div>
-            <div className="card-content">
-                <p>{props.content}</p>
             </div>
         </div>
     )

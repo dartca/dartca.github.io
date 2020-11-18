@@ -56,4 +56,10 @@ img.hover-zoom:hover {
 
 .card-title{
     background-color: #8f8f8f;
+    width: 100%;
+    text-align: center;
+}
+
+.page-footer{
+    background-color: #8f8f8f;
 }
