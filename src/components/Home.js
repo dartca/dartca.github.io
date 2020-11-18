@@ -23,10 +23,10 @@ export const Home = () => {
                     <h4>¿Qué es Dartca?</h4>
                 </div>
                 <div className="col s4 center">
-                    <Card img={sFond} title="Arquitectura y Diseño" content="Algo relacionado con la arquitectura"/>
+                    <Card img={sFond} title="Arquitectura y Diseño" liga="/arqui"/>
                 </div>
                 <div className="col s4 center">
-                    <Card img={arte} title="Arte" content="Algo relacionado con el arte"/>
+                    <Card img={arte} title="Arte" liga="/arte"/>
                 </div>
             </div>            
         </div>

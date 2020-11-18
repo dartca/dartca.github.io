@@ -3,7 +3,7 @@ import M from 'materialize-css'
 import '../styles.css';
 import {ArtImg} from '../utils/ImgName';
 
-export const CarouselArq = () => {
+export const CarouselArt = () => {
 
     useEffect(() => {
         const elems00 = document.querySelectorAll('.carousel');
@@ -28,7 +28,7 @@ export const CarouselArq = () => {
             <div className="row">
                 <br/><br/>
                 <div className="col s12">
-                    <h3 className="center-align">Arquitectura y Diseño</h3><br/>
+                    <h3 className="center-align">Arte</h3><br/>
                     <div className="carousel center-align">
                         {
                             ArtImg.map((imgA)=>{
