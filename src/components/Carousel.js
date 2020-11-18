@@ -32,9 +32,9 @@ export const Carousel = (props) => {
                         {
                             props.imgs.map((imgA)=>{
                                 return(
-                                    <a className="carousel-item" href={"#"+imgA.title} key={imgA.title}>
-                                        <img className="materialboxed" src={imgA.iman} alt="/"/>
-                                    </a>
+                                    <div className="carousel-item" key={imgA.title}>
+                                        <img className="materialboxed" src={imgA.iman} alt="#here!"/>
+                                    </div>
                                 )
                             })
                         }

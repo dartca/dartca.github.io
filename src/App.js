@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -17,7 +17,7 @@ import {Carousel} from './components/Carousel';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <div>
         <Navbar/>
         <Switch>

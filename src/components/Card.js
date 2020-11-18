@@ -12,7 +12,7 @@ export const Card = (props) => {
         <div className="card black white-text">
             <div className="card-image">
                 <Link to={props.liga}>
-                    <img src={props.img} alt="/" className="hover-zoom"/>
+                    <img src={props.img} alt="#here!" className="hover-zoom"/>
                 </Link>
                 <span className="card-title">{props.title}</span>
             </div>
