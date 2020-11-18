@@ -7,13 +7,13 @@ import {
 
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize';
+import {ArqImg, ArtImg} from './utils/ImgName';
 import './styles.css';
 
 import {Navbar} from './components/Navbar';
 import {Home} from './components/Home';
-import {CarouselArq} from './components/CarouselArq';
-import {CarouselArt} from './components/CarouselArt';
 import {Footer} from './components/Footer';
+import {Carousel} from './components/Carousel';
 
 function App() {
   return (
@@ -22,10 +22,10 @@ function App() {
         <Navbar/>
         <Switch>
           <Route path="/arqui">
-            <CarouselArq/>
+            <Carousel title="Arquitectura y Diseño" imgs={ArqImg}/>
           </Route>
           <Route path="/arte">
-            <CarouselArt/>
+            <Carousel title="Arte" imgs={ArtImg}/>
           </Route>
           <Route path="/">
             <Home/>

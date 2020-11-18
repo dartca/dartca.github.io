@@ -1,9 +1,8 @@
 import React, {useEffect} from 'react';
 import M from 'materialize-css'
 import '../styles.css';
-import {ArqImg} from '../utils/ImgName';
 
-export const CarouselArq = () => {
+export const Carousel = (props) => {
 
     useEffect(() => {
         const elems00 = document.querySelectorAll('.carousel');
@@ -28,10 +27,10 @@ export const CarouselArq = () => {
             <div className="row">
                 <br/><br/>
                 <div className="col s12">
-                    <h3 className="center-align">Arquitectura y Diseño</h3><br/>
+                    <h3 className="center-align">{props.title}</h3><br/>
                     <div className="carousel center-align">
                         {
-                            ArqImg.map((imgA)=>{
+                            props.imgs.map((imgA)=>{
                                 return(
                                     <a className="carousel-item" href={"#"+imgA.title} key={imgA.title}>
                                         <img className="materialboxed" src={imgA.iman} alt="/"/>
