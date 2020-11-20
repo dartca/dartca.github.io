@@ -6,7 +6,7 @@ export const Carousel = (props) => {
 
     useEffect(() => {
         const elems00 = document.querySelectorAll('.carousel');
-        const indic00 = M.Carousel.init(elems00, {
+        M.Carousel.init(elems00, {
             duration: 250,
             dist: -90,
             shift: 20,
@@ -16,19 +16,18 @@ export const Carousel = (props) => {
         });
 
         var elems01 = document.querySelectorAll('.materialboxed');
-        const indic01 = M.Materialbox.init(elems01, {});
-
-        console.log(indic00);
-        console.log(indic01);
+        M.Materialbox.init(elems01, {});
     },[]);
 
     return(
-        <div className="container">
+        <div className="container center">
             <div className="row">
                 <br/><br/>
                 <div className="col s12">
-                    <h3 className="center-align">{props.title}</h3><br/>
-                    <div className="carousel center-align">
+                    <h3 className="center-align animate__animated animate__fadeInDown animate__delay-1s">
+                        {props.title}
+                    </h3><br/>
+                    <div className="carousel center-align animate__animated animate__fadeInUp animate__delay-1s">
                         {
                             props.imgs.map((imgA)=>{
                                 return(

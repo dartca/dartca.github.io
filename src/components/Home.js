@@ -2,6 +2,7 @@ import React from 'react';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import 'materialize-css/dist/js/materialize';
+import 'animate.css/animate.min.css';
 import '../styles.css';
 import arte from '../img/Arte/a1.png'
 import cText from '../img/c_texto.png'
@@ -16,11 +17,11 @@ export const Home = () => {
             <div className="row">
                 <div className="col s4 center">
                     <div className="card black white-text">
-                        <div className="card-image">
+                        <div className="card-image animate__animated animate__backInLeft animate__delay-1s">
                             <img src={cText} alt="/"/>
                         </div>
                     </div>
-                    <h4>¿Qué es Dartca?</h4>
+                    <h4 className="animate__animated animate__backInLeft animate__delay-1s">¿Qué es Dartca?</h4>
                 </div>
                 <div className="col s4 center">
                     <Card img={sFond} title="Arquitectura y Diseño" liga="/arqui"/>
