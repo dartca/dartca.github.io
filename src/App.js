@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import {
   HashRouter as Router,
   Switch,
@@ -15,10 +15,24 @@ import {Home} from './components/Home';
 import {Footer} from './components/Footer';
 import {Carousel} from './components/Carousel';
 
+import {Loader} from './components/Loader'
+
 function App() {
+
+  const [show, setShow] = useState(true)
+
+  useEffect(()=>{
+    setTimeout(verInfo,2000)
+  })
+
+  function verInfo(){
+    setShow(false)
+  }
+
   return (
     <Router basename="/">
       <div>
+        { show ? <Loader/> : null }
         <Navbar/>
         <Switch>
           <Route path="/arqui">

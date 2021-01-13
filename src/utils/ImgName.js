@@ -7,6 +7,8 @@ import imgA1 from '../img/Arte/a1.png';
 import imgA2 from '../img/Arte/a2.jpg';
 import imgA3 from '../img/Arte/flores.png';
 import imgA4 from '../img/Arte/fondoTortuga.png';
+import imgA5 from '../img/Arte/imagenDeFondo.png';
+import imgA6 from '../img/Arte/novios.png';
 
 export const ArqImg = [
     {
@@ -43,5 +45,13 @@ export const ArtImg = [
     {
         'iman': imgA4,
         'title': 'Fondo Tortuga' 
+    },
+    {
+        'iman': imgA5,
+        'title': 'Bosque' 
+    },
+    {
+        'iman': imgA6,
+        'title': 'Novios' 
     }
 ];
