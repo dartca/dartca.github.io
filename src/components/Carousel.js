@@ -22,7 +22,6 @@ export const Carousel = (props) => {
     return(
         <div className="container center">
             <div className="row">
-                <br/><br/>
                 <div className="col s12">
                     <h3 className="center-align animate__animated animate__fadeInDown animate__delay-1s">
                         {props.title}
@@ -40,6 +39,7 @@ export const Carousel = (props) => {
                     </div>
                 </div>
             </div>
+            <br></br><br></br>
         </div>
     )
 }

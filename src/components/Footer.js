@@ -1,11 +1,11 @@
 export const Footer = () =>{
     return(
-        <footer className="page-footer animate__animated animate__fadeInDown">
+        <footer className="page-footer animate__animated animate__fadeInDown" id="contacto">
             <div className="container">
                 <div className="row">
                 <div className="col l6 s12">
                     <h5 className="white-text">Contacto</h5>
-                    <p className="grey-text text-lighten-4">Correo electrónico: ortizlauraortiz53@gmail.com</p>
+                    <i className="fa fa-envelope"> ortizlauraortiz53@gmail.com</i>
                 </div>
                 <div className="col l4 offset-l2 s12">
                     <h5 className="white-text">Redes sociales</h5>

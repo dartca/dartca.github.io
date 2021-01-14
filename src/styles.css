@@ -42,7 +42,7 @@ button{
 
 .img-wrapper{
     overflow:hidden;
-  }
+}
 
 img.hover-zoom{
     width: 100%;
@@ -116,4 +116,8 @@ img.hover-zoom:hover {
     to{
         transform: rotate(360deg);
     }
+}
+
+.materialboxed:focus{
+    z-index: 9999 !important;
 }
